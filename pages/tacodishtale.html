@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character encoding and responsive viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taco - World Flavors</title>
+    <!-- External stylesheets and fonts -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <!-- JavaScript file for interactive functionality -->
+    <script src="../js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <!-- Header Section: Contains logo and navigation -->
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../images/logo.png" alt="World Flavors Logo">
+            </a>
+        </div>
+        <nav>
+            <button class="hamburger" aria-label="Menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            <div class="nav-links">
+                <div class="nav-dropdown">
+                    <button class="nav-link">Dishes</button>
+                    <div class="dropdown-content">
+                        <a href="dish-tale.html">Butter Chicken</a>
+                        <a href="tacodishtale.html">Tacos</a>
+                        <a href="pizzamargeritatale.html">Pizza Margherita</a>
+                        <a href="australian-pie-cook.html">Australian Pie</a>
+                    </div>
+                </div>
+                <a href="trivia.html" class="nav-link">Taste Test Trivia</a>
+                <a href="about.html" class="nav-link">About</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Main Content Section -->
+        <div class="dish-container">
+            <!-- Dish Header Section: Contains quote and navigation -->
+            <div class="left-column">
+                <div class="dish-quote">
+                    <p>Tacos date back to the 18th century in Mexico, believed to have originated with silver miners!</p>
+                </div>
+                <div class="mini-nav">
+                    <a href="tacocook.html" class="mini-nav-btn">Cook It Up</a>
+                    <a href="tacotips.html" class="mini-nav-btn">Tips & Tricks</a>
+                </div>
+            </div>
+
+            <div class="middle-column">
+                <div class="dish-image-container">
+                    <img src="../images/beeftaco.jpeg" alt="Beef Taco" class="dish-image">
+                    <h1 class="dish-name">Tacos</h1>
+                </div>
+            </div>
+
+            <div class="right-column">
+                <div class="country-map">
+                    <img src="../images/mexico.png" alt="Map of Mexico">
+                    <p class="country-name">Mexico</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="dish-history">
+            <h1 class="history-title">The Story of Tacos</h1>
+            <div class="history-content">
+                <p>Tacos are a traditional Mexican dish consisting of a corn or wheat tortilla folded or rolled around a filling. The origins of tacos predate the arrival of Europeans in Mexico, with evidence suggesting that indigenous people in the Valley of Mexico traditionally ate tacos filled with small fish.</p>
+                
+                <p>The word "taco" comes from the Nahuatl word "tlahco" which means "half" or "in the middle," referring to the way it is formed. Tacos were first documented in Mexico by the Spanish conquistadors, who observed indigenous people eating tacos with a variety of fillings.</p>
+                
+                <p>In the 19th century, tacos began to spread beyond Mexico, particularly to the United States, where they became popular in the southwestern states. The first mention of tacos in the United States appeared in a newspaper in 1905, and by the 1920s, taco stands were common in Los Angeles.</p>
+                
+                <p>Today, tacos have become a global phenomenon, with countless variations and fillings. From street food to gourmet restaurants, tacos represent the perfect combination of simplicity and flavor, embodying the essence of Mexican cuisine.</p>
+            </div>
+        </div>
+
+        <!-- Dish Expansion Section -->
+        <h2 class="expansion-title">Explore More Mexican Dishes</h2>
+        <div class="dishes-grid">
+            <div class="dish-card" data-dish="enchiladas">
+                <h3>Enchiladas</h3>
+                <p class="dish-description">A traditional Mexican dish made with corn tortillas rolled around a filling and covered with a chili pepper sauce. Enchiladas can be filled with various ingredients and are often topped with cheese.</p>
+                <div class="dish-info">
+                    <p><strong>Origin:</strong> Mexico</p>
+                    <p><strong>Main Ingredients:</strong> Corn Tortillas, Chili Sauce, Cheese, Meat/Beans, Toppings</p>
+                </div>
+                <a href="#" class="read-more-btn">Read More</a>
+            </div>
+
+            <div class="dish-card" data-dish="burrito">
+                <h3>Burrito</h3>
+                <p class="dish-description">A larger flour tortilla wrapped around various fillings, including rice, beans, meat, and vegetables. Burritos are a hearty and portable Mexican dish.</p>
+                <div class="dish-info">
+                    <p><strong>Origin:</strong> Northern Mexico</p>
+                    <p><strong>Main Ingredients:</strong> Flour Tortilla, Rice, Beans, Meat, Vegetables</p>
+                </div>
+                <a href="#" class="read-more-btn">Read More</a>
+            </div>
+
+            <div class="dish-card" data-dish="quesadilla">
+                <h3>Quesadilla</h3>
+                <p class="dish-description">A tortilla filled with cheese and other ingredients, folded in half and grilled. Quesadillas are a popular Mexican dish that can be served as a snack or meal.</p>
+                <div class="dish-info">
+                    <p><strong>Origin:</strong> Mexico</p>
+                    <p><strong>Main Ingredients:</strong> Tortilla, Cheese, Meat/Vegetables (optional)</p>
+                </div>
+                <a href="#" class="read-more-btn">Read More</a>
+            </div>
+        </div>
+
+        <!-- Popup Content -->
+        <div class="popup-content" id="enchiladas-popup">
+            <button class="close-btn">×</button>
+            <h3>Cultural Significance</h3>
+            <p>Enchiladas are a cornerstone of Mexican cuisine, representing the rich tradition of combining corn tortillas with various fillings and sauces. They showcase the importance of chili peppers in Mexican cooking and the art of layering flavors.</p>
+            <h3>Cooking Technique</h3>
+            <p>Traditional enchiladas are made by lightly frying corn tortillas, dipping them in chili sauce, filling them with ingredients like meat, beans, or cheese, rolling them up, and baking them with more sauce and cheese on top. The key is to ensure the tortillas are pliable but not too soft.</p>
+        </div>
+
+        <div class="popup-content" id="burrito-popup">
+            <button class="close-btn">×</button>
+            <h3>Cultural Significance</h3>
+            <p>Burritos are a symbol of Mexican-American fusion cuisine, particularly popular in the southwestern United States. They represent the adaptation of Mexican food to American tastes and lifestyles.</p>
+            <h3>Cooking Technique</h3>
+            <p>Burritos are assembled by placing fillings in the center of a large flour tortilla, which is then folded from the sides and rolled from the bottom. The key is to ensure the fillings are properly distributed and the tortilla is tightly wrapped to prevent spillage.</p>
+        </div>
+
+        <div class="popup-content" id="quesadilla-popup">
+            <button class="close-btn">×</button>
+            <h3>Cultural Significance</h3>
+            <p>Quesadillas are a beloved Mexican dish that showcases the importance of cheese in Mexican cuisine. They are often served as a quick meal or snack, particularly popular among children and families.</p>
+            <h3>Cooking Technique</h3>
+            <p>Traditional quesadillas are made by placing cheese and optional fillings on one half of a tortilla, folding it over, and grilling it until the cheese melts. The tortilla should develop a slight crispness while the cheese becomes gooey and flavorful.</p>
+        </div>
+
+        <!-- Overlay -->
+        <div class="overlay"></div>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="map.html">Map</a>
+            <a href="all-recipes.html">All Recipes</a>
+            <a href="about.html">About</a>
+        </div>
+        <p class="contact-info">Contact us: asethi@gmail.com</p>
+        <p class="license-info">Visual elements and imagery are licensed through Adobe Stock</p>
+        <p class="copyright">© 2025 Aitareya Sethi . All rights reserved.</p>
+    </footer>
+
+    <div class="menu-overlay"></div>
+</body>
+</html> 

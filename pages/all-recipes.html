@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character encoding and responsive viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Recipes - World Flavors</title>
+    <!-- External stylesheets and fonts -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <!-- JavaScript file for interactive functionality -->
+    <script src="../js/script.js" defer></script>
+</head>
+<body>
+    <!-- Header Section: Contains logo and navigation -->
+    <header>
+        <!-- Logo container with link to home page -->
+        <div class="logo">
+            <a href="../index.html"><img src="../images/logo.png" alt="World Flavors Logo"></a>
+        </div>
+        
+        <!-- Navigation Section: Contains hamburger menu and navigation links -->
+        <nav>
+            <!-- Hamburger menu button for mobile view -->
+            <button class="hamburger" aria-label="Menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            <!-- Navigation links container -->
+            <div class="nav-links">
+                <!-- Dishes dropdown menu -->
+                <div class="nav-dropdown">
+                    <button class="nav-link">Dishes</button>
+                    <div class="dropdown-content">
+                        <a href="dish-tale.html">Butter Chicken</a>
+                        <a href="tacodishtale.html">Tacos</a>
+                        <a href="pizzamargeritatale.html">Pizza Margherita</a>
+                        <a href="australian-pie-cook.html">Australian Pie</a>
+                    </div>
+                </div>
+                <!-- Other navigation links -->
+                <a href="trivia.html" class="nav-link">Taste Test Trivia</a>
+                <a href="about.html" class="nav-link">About</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Overlay for mobile menu -->
+    <div class="menu-overlay"></div>
+
+    <!-- Main Content Section -->
+    <main>
+        <!-- Dishes Container: Contains all recipe cards with fade-in animation -->
+        <div class="dishes-container animate-fade-in">
+            <!-- Page title -->
+            <h1 class="section-title">All Recipes</h1>
+            
+            <!-- Recipe Grid: Responsive grid layout for recipe cards -->
+            <div class="recipes-grid">
+                <!-- Butter Chicken Recipe Card -->
+                <div class="recipe-card">
+                    <img src="../images/butterchicken.jpg" alt="Butter Chicken">
+                    <div class="recipe-info">
+                        <h3>Butter Chicken</h3>
+                        <p class="recipe-country">India</p>
+                        <p class="recipe-time">Prep: 30 min | Cook: 45 min</p>
+                        <a href="cook.html" class="cook-recipe-btn">Cook Recipe</a>
+                    </div>
+                </div>
+                
+                <!-- Street Tacos Recipe Card -->
+                <div class="recipe-card">
+                    <img src="../images/beeftaco.jpeg" alt="Street Tacos">
+                    <div class="recipe-info">
+                        <h3>Street Tacos</h3>
+                        <p class="recipe-country">Mexico</p>
+                        <p class="recipe-time">Prep: 15 min | Cook: 20 min</p>
+                        <a href="tacocook.html" class="cook-recipe-btn">Cook Recipe</a>
+                    </div>
+                </div>
+                
+                <!-- Pizza Margherita Recipe Card -->
+                <div class="recipe-card">
+                    <img src="../images/margerita.jpeg" alt="Pizza Margherita">
+                    <div class="recipe-info">
+                        <h3>Pizza Margherita</h3>
+                        <p class="recipe-country">Italy</p>
+                        <p class="recipe-time">Prep: 30 min | Cook: 15 min</p>
+                        <a href="pizzamargeritacook.html" class="cook-recipe-btn">Cook Recipe</a>
+                    </div>
+                </div>
+                
+                <!-- Australian Meat Pie Recipe Card -->
+                <div class="recipe-card">
+                    <img src="../images/apie.jpeg" alt="Australian Meat Pie" class="recipe-image">
+                    <div class="recipe-info">
+                        <h3>Australian Meat Pie</h3>
+                        <p class="recipe-country">Australia</p>
+                        <p class="recipe-time">Coming Soon</p>
+                        <a href="australian-pie-cook.html" class="cook-recipe-btn">Cook Recipe</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Section: Contains navigation links and copyright information -->
+    <footer>
+        <!-- Footer navigation links -->
+        <div class="footer-links">
+            <a href="map.html">Map</a>
+            <a href="all-recipes.html">All Recipes</a>
+            <a href="about.html">About</a>
+        </div>
+        <!-- Contact and license information -->
+        <p class="contact-info">Contact us: asethi@gmail.com</p>
+        <p class="license-info">Visual elements and imagery are licensed through Adobe Stock</p>
+        <p class="copyright">© 2025 Aitareya Sethi . All rights reserved.</p>
+    </footer>
+</body>
+</html> 
